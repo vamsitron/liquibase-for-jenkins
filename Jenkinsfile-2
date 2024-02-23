@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Update') {
       steps {
-        sh 'liquibase update  --url="jdbc:postgresql://127.0.0.1:5432/world" --changeLogFile=my_app-wrapper.xml --username=krishna --password=krishna''
+        sh 'liquibase update --url="jdbc:postgresql://127.0.0.1:5432/world" --changeLogFile=my_app-wrapper.xml --username=krishna --password=krishna'
       }
     }
   }
